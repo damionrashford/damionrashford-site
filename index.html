@@ -3,383 +3,288 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Damion Rashford — AI Agent Developer & MCP Engineer</title>
-<meta name="description" content="A working index of agentic systems and open-source MCP tooling by Damion Rashford. Creator of RivalSearchMCP (101★). 152 stars across 32 open-source projects." />
+<title>Damion Rashford — AI Agent Developer</title>
+<meta name="description" content="Damion Rashford builds the tooling layer for AI agents — production MCP servers and agentic systems. Creator of RivalSearchMCP. 152★ across 32 open-source projects." />
 <meta name="author" content="Damion Rashford" />
 <link rel="canonical" href="https://damionrashford.com/" />
 <meta property="og:type" content="profile" />
-<meta property="og:title" content="Damion Rashford — AI Agent Developer & MCP Engineer" />
-<meta property="og:description" content="A working index of agentic systems and open-source MCP tooling. Creator of RivalSearchMCP. 152★ across 32 projects." />
+<meta property="og:title" content="Damion Rashford — AI Agent Developer" />
+<meta property="og:description" content="Builds the tooling layer for AI agents. Creator of RivalSearchMCP. 152★ across 32 open-source projects." />
 <meta property="og:url" content="https://damionrashford.com/" />
 <meta property="og:image" content="https://damionrashford.com/og-image.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="theme-color" content="#f1ece1" />
+<meta name="theme-color" content="#0a0a0b" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Damion Rashford","url":"https://damionrashford.com","jobTitle":"AI Agent Developer","worksFor":{"@type":"Organization","name":"Shopify"},"sameAs":["https://github.com/damionrashford","https://www.linkedin.com/in/damion-rashford/"],"knowsAbout":["Model Context Protocol","AI Agents","Python","TypeScript","GraphQL","Retrieval-Augmented Generation"]}
+{"@context":"https://schema.org","@type":"Person","name":"Damion Rashford","url":"https://damionrashford.com","jobTitle":"AI Agent Developer","worksFor":{"@type":"Organization","name":"Shopify"},"sameAs":["https://github.com/damionrashford","https://www.linkedin.com/in/damion-rashford/"],"knowsAbout":["Model Context Protocol","AI Agents","Python","TypeScript","GraphQL"]}
 </script>
 <script>document.documentElement.className+=' js'</script>
-<!-- Studio · macrostructure: index-ledger · genre: editorial · theme: bone-oxblood · tone: editorial -->
+<!-- Studio · macrostructure: spare-statement · genre: modern-minimal · theme: graphite-lime · tone: technical -->
 <style>
 :root{
-  --paper:oklch(0.96 0.011 85);
-  --paper-2:oklch(0.928 0.015 82);
-  --panel:oklch(0.945 0.013 84);
-  --ink:oklch(0.205 0.013 55);
-  --ink-soft:oklch(0.40 0.015 52);
-  --faint:oklch(0.42 0.015 52);
-  --line:oklch(0.82 0.015 72);
-  --line-2:oklch(0.70 0.016 64);
-  --accent:oklch(0.46 0.15 31);
-  --accent-deep:oklch(0.39 0.14 31);
-  --accent-wash:oklch(0.46 0.15 31 / .07);
-  --maxw:1080px; --gutter:clamp(20px,5vw,56px);
-  --ease:cubic-bezier(.2,.7,.2,1);
-  --serif:'Fraunces',Georgia,serif;
-  --sans:'Hanken Grotesk',system-ui,sans-serif;
-  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --bg:oklch(0.165 0.005 270);
+  --bg-2:oklch(0.205 0.006 270);
+  --line:oklch(0.30 0.008 270);
+  --line-soft:oklch(0.255 0.007 270);
+  --fg:oklch(0.97 0.004 270);
+  --mut:oklch(0.70 0.008 270);
+  --dim:oklch(0.52 0.008 270);
+  --acc:oklch(0.88 0.19 126);
+  --acc-ink:oklch(0.22 0.06 140);
+  --maxw:1120px;
+  --pad:clamp(20px,5vw,64px);
+  --ease:cubic-bezier(.19,1,.22,1);
+  --disp:'Bricolage Grotesque',system-ui,sans-serif;
+  --body:'Inter',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{
-  background:var(--paper);color:var(--ink);
-  font-family:var(--sans);font-weight:400;line-height:1.6;font-size:16px;
-  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:clip;position:relative;
-}
-/* faint paper tooth */
-body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.4;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.45'/%3E%3C/svg%3E");
-  mix-blend-mode:multiply}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:clip;letter-spacing:-.005em}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
 .mono{font-family:var(--mono)}
 .tnum{font-variant-numeric:tabular-nums}
 a{color:inherit;text-decoration:none}
-::selection{background:var(--accent);color:var(--paper)}
+::selection{background:var(--acc);color:var(--acc-ink)}
 
-/* small-caps section label */
-.label{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
-.cross{color:var(--accent)}
+/* nav */
+header{position:fixed;top:0;left:0;right:0;z-index:40;
+  background:color-mix(in oklch,var(--bg) 72%,transparent);backdrop-filter:blur(12px) saturate(1.4);
+  border-bottom:1px solid transparent;transition:border-color .3s,background .3s}
+header.scrolled{border-color:var(--line-soft)}
+nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-family:var(--mono);font-size:13px;letter-spacing:.02em;color:var(--fg);display:flex;align-items:center;gap:9px}
+.brand .dot{width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 10px var(--acc)}
+.nav-r{display:flex;align-items:center;gap:30px}
+.nav-r a{font-family:var(--mono);font-size:12.5px;color:var(--mut);transition:color .2s}
+.nav-r a:hover{color:var(--fg)}
+.nav-r .av{color:var(--acc)}
+@media(max-width:640px){.nav-r a:not(.av){display:none}}
 
-/* running head / nav */
-.runhead{position:sticky;top:0;z-index:30;background:var(--paper);border-bottom:1px solid var(--ink)}
-.runhead .row{display:flex;align-items:center;justify-content:space-between;height:46px;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase}
-.runhead .nm{font-weight:600}
-.runhead nav{display:flex;gap:22px}
-.runhead nav a{color:var(--ink-soft);transition:color .15s var(--ease)}
-.runhead nav a:hover{color:var(--accent)}
-@media(max-width:620px){.runhead nav a:not(.last){display:none}}
+/* hero */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:120px 0 64px;position:relative}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;color:var(--mut);display:flex;align-items:center;gap:12px;margin-bottom:34px}
+.eyebrow .ln{width:34px;height:1px;background:var(--line)}
+.eyebrow b{color:var(--acc);font-weight:400}
+h1{font-family:var(--disp);font-weight:600;font-size:clamp(44px,8.4vw,108px);line-height:.97;letter-spacing:-.035em}
+h1 .o{color:var(--dim)}
+.hero .sub{margin-top:34px;max-width:46ch;font-size:clamp(16.5px,1.9vw,20px);color:var(--mut)}
+.hero .sub b{color:var(--fg);font-weight:500}
+.hero .row{display:flex;align-items:center;gap:14px;margin-top:42px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:13px;padding:13px 20px;border-radius:8px;transition:transform .2s var(--ease),background .2s,color .2s,border-color .2s}
+.btn.pri{background:var(--acc);color:var(--acc-ink);font-weight:500}
+.btn.pri:hover{transform:translateY(-2px)}
+.btn.sec{border:1px solid var(--line);color:var(--fg)}
+.btn.sec:hover{border-color:var(--fg);transform:translateY(-2px)}
+.scrollcue{position:absolute;bottom:30px;left:var(--pad);font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);display:flex;align-items:center;gap:10px}
+.scrollcue .b{width:1px;height:26px;background:linear-gradient(var(--acc),transparent);display:inline-block}
+@media(max-width:640px){.scrollcue{display:none}}
 
-/* ===== masthead ===== */
-.masthead{padding:clamp(40px,7vw,86px) 0 0}
-.dateline{display:flex;justify-content:space-between;align-items:baseline;
-  font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--faint);
-  padding-bottom:14px;border-bottom:2px solid var(--ink)}
-.title{font-family:var(--serif);font-weight:500;font-optical-sizing:auto;
-  font-size:clamp(48px,12vw,140px);line-height:.92;letter-spacing:-.02em;
-  padding:clamp(20px,3vw,30px) 0 0;color:var(--ink)}
-.title .amp{font-style:italic;font-weight:400;color:var(--accent)}
-.deck{display:grid;grid-template-columns:1.55fr .95fr;gap:clamp(24px,5vw,60px);
-  align-items:end;padding:clamp(20px,3vw,34px) 0 clamp(28px,4vw,40px);
-  border-bottom:1px solid var(--line)}
-@media(max-width:760px){.deck{grid-template-columns:1fr;gap:26px}}
-.standfirst{font-family:var(--serif);font-weight:400;font-size:clamp(19px,2.4vw,25px);line-height:1.42;color:var(--ink)}
-.standfirst b{font-weight:500}
-.standfirst .lead{color:var(--accent);font-style:italic}
-.colo{font-family:var(--mono);font-size:13px;line-height:1.5}
-.colo .r{display:flex;gap:12px;padding:7px 0;border-top:1px solid var(--line)}
-.colo .r:first-child{border-top:0}
-.colo .k{color:var(--faint);min-width:52px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding-top:2px}
-.colo .v{color:var(--ink)}
-.colo .v a{border-bottom:1px solid var(--line-2)}
-.colo .v a:hover{color:var(--accent);border-color:var(--accent)}
-.colo .open{color:var(--accent)}
-.mast-cta{display:flex;gap:26px;flex-wrap:wrap;padding:22px 0 0;font-family:var(--mono);font-size:13px;letter-spacing:.04em}
-.mast-cta a{display:inline-flex;align-items:center;gap:7px;color:var(--ink);border-bottom:2px solid var(--accent);padding-bottom:3px;transition:color .15s,gap .15s}
-.mast-cta a:hover{color:var(--accent);gap:11px}
+/* stat band */
+.band{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
+@media(max-width:680px){.band{grid-template-columns:repeat(2,1fr)}.band>div:nth-child(-n+2){border-bottom:1px solid var(--line-soft)}}
+.band>div{padding:30px 4px}
+.band .n{font-family:var(--disp);font-weight:600;font-size:clamp(28px,4vw,40px);letter-spacing:-.02em}
+.band .n em{font-style:normal;color:var(--acc)}
+.band .l{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;color:var(--dim);margin-top:8px}
 
-/* ===== sections ===== */
-section{padding:clamp(48px,7vw,84px) 0}
-.sechead{display:flex;align-items:baseline;justify-content:space-between;gap:16px;
-  padding-bottom:18px;margin-bottom:34px;border-bottom:1px solid var(--ink)}
-.sechead h2{font-family:var(--serif);font-weight:500;font-size:clamp(22px,3.2vw,32px);letter-spacing:-.015em;line-height:1}
-.sechead .meta{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);white-space:nowrap}
+/* section frame */
+section{padding:clamp(72px,10vw,128px) 0}
+.shead{display:flex;align-items:baseline;gap:14px;margin-bottom:52px}
+.shead .ix{font-family:var(--mono);font-size:12.5px;color:var(--acc)}
+.shead h2{font-family:var(--disp);font-weight:600;font-size:clamp(24px,3.4vw,34px);letter-spacing:-.02em}
+.shead .rule{flex:1;height:1px;background:var(--line-soft);align-self:center}
 
-/* index of work */
-.index{display:flex;flex-direction:column}
-.entry{display:grid;grid-template-columns:38px 1fr auto;gap:18px;align-items:baseline;
-  padding:20px 10px 20px 8px;border-bottom:1px solid var(--line);position:relative;
-  transition:background .18s var(--ease),padding-left .18s var(--ease)}
-.entry:hover{background:var(--accent-wash);padding-left:18px}
-.entry .no{font-family:var(--mono);font-size:13px;color:var(--accent);font-weight:500;padding-top:5px}
-.entry .body .t{font-family:var(--serif);font-size:clamp(20px,2.6vw,26px);font-weight:500;letter-spacing:-.01em;line-height:1.05}
-.entry:hover .body .t{color:var(--accent-deep)}
-.entry .body .d{color:var(--ink-soft);font-size:14.5px;margin-top:5px;max-width:62ch}
-.entry .body .tags{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin-top:9px}
-.entry .right{text-align:right;font-family:var(--mono);font-size:13px;white-space:nowrap;padding-top:4px}
-.entry .right .star{color:var(--accent);font-weight:500}
-.entry .right .arr{display:block;color:var(--line-2);font-size:15px;margin-top:6px;transition:color .15s,transform .18s var(--ease)}
-.entry:hover .right .arr{color:var(--accent);transform:translate(3px,-3px)}
-.index .more{display:grid;grid-template-columns:38px 1fr auto;gap:18px;align-items:baseline;
-  padding:18px 8px;font-family:var(--mono);font-size:13px;color:var(--faint);transition:color .15s}
-.index .more:hover{color:var(--accent)}
-.index .more .no{color:var(--line-2)}
+/* work rows */
+.rows{display:flex;flex-direction:column}
+.r{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;
+  padding:30px 8px;border-top:1px solid var(--line-soft);position:relative;transition:padding .25s var(--ease)}
+.r:last-child{border-bottom:1px solid var(--line-soft)}
+.r::before{content:"";position:absolute;left:0;top:-1px;height:calc(100% + 1px);width:0;background:var(--acc);transition:width .25s var(--ease)}
+.r:hover{padding-left:24px}
+.r:hover::before{width:2px}
+.r .ix{font-family:var(--mono);font-size:13px;color:var(--dim);transition:color .2s}
+.r:hover .ix{color:var(--acc)}
+.r .mid .t{display:block;font-family:var(--disp);font-weight:600;font-size:clamp(20px,2.6vw,27px);letter-spacing:-.015em;transition:color .2s}
+.r:hover .mid .t{color:var(--acc)}
+.r .mid .d{display:block;color:var(--mut);font-size:14.5px;margin-top:8px;max-width:58ch}
+.r .mid .k{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--dim);margin-top:12px;text-transform:uppercase}
+.r .end{font-family:var(--mono);font-size:13px;color:var(--mut);text-align:right;white-space:nowrap;display:flex;align-items:center;gap:16px}
+.r .end .st{color:var(--acc)}
+.r .end .ar{color:var(--dim);font-size:17px;transition:transform .25s var(--ease),color .2s}
+.r:hover .end .ar{color:var(--acc);transform:translate(4px,-4px)}
+@media(max-width:680px){.r{grid-template-columns:auto 1fr;gap:16px}.r .end{grid-column:2;justify-content:flex-start;text-align:left;margin-top:4px}}
+.allrepos{display:inline-flex;align-items:center;gap:9px;margin-top:34px;font-family:var(--mono);font-size:13px;color:var(--mut);
+  border-bottom:1px solid var(--line);padding-bottom:4px;transition:color .2s,border-color .2s}
+.allrepos:hover{color:var(--acc);border-color:var(--acc)}
 
-/* about — editorial essay with drop cap */
-.essay{display:grid;grid-template-columns:1fr clamp(180px,22vw,250px);gap:clamp(28px,5vw,64px)}
-@media(max-width:760px){.essay{grid-template-columns:1fr;gap:8px}}
-.essay .body p{font-family:var(--serif);font-size:clamp(17px,2vw,20px);line-height:1.6;color:var(--ink);margin-top:20px;max-width:58ch}
-.essay .body p:first-child{margin-top:0}
-.essay .body p:first-child::first-letter{font-family:var(--serif);font-weight:500;float:left;font-size:4.4em;line-height:.74;padding:6px 12px 0 0;color:var(--accent)}
-.essay .body b{font-weight:600}
-.essay .body em{font-style:italic;color:var(--accent-deep)}
-.essay aside{font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.6vw,26px);line-height:1.3;color:var(--ink);
-  border-top:2px solid var(--accent);padding-top:16px;align-self:start}
-.essay aside .by{display:block;font-family:var(--mono);font-style:normal;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-top:14px}
-@media(max-width:760px){.essay aside{margin-top:30px}}
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px)}
+@media(max-width:760px){.about{grid-template-columns:1fr;gap:36px}}
+.about .lead{font-family:var(--disp);font-weight:500;font-size:clamp(22px,3vw,32px);line-height:1.25;letter-spacing:-.02em}
+.about .lead em{font-style:normal;color:var(--acc)}
+.about .body p{color:var(--mut);margin-top:18px;font-size:16px}
+.about .body p:first-child{margin-top:0}
+.about .body b{color:var(--fg);font-weight:500}
+.about .body .pr{margin-top:30px;display:flex;flex-direction:column;gap:0}
+.about .pr a, .about .pr .li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-top:1px solid var(--line-soft);font-family:var(--mono);font-size:13px}
+.about .pr .li:last-child{border-bottom:1px solid var(--line-soft)}
+.about .pr .li .k{color:var(--dim)}
+.about .pr .li .v{color:var(--fg)}
+.about .pr .li .v.acc{color:var(--acc)}
 
-/* currently — dated log */
-.log{display:flex;flex-direction:column;border-top:1px solid var(--line)}
-.logrow{display:grid;grid-template-columns:120px 1fr;gap:24px;padding:18px 4px;border-bottom:1px solid var(--line)}
-@media(max-width:620px){.logrow{grid-template-columns:1fr;gap:6px}}
-.logrow .when{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);padding-top:3px}
-.logrow .what{font-size:15.5px;color:var(--ink)}
-.logrow .what b{font-weight:600}
-.logrow .what span{color:var(--ink-soft)}
+/* stack */
+.grid2{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+@media(max-width:760px){.grid2{grid-template-columns:repeat(2,1fr)}}
+.grid2 .cell{background:var(--bg);padding:24px 22px}
+.grid2 .cell h4{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:16px}
+.grid2 .cell ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.grid2 .cell li{font-size:14.5px;color:var(--fg)}
 
-/* stack — ledger list */
-.specs{display:flex;flex-direction:column;border-top:1px solid var(--ink)}
-.spec{display:grid;grid-template-columns:160px 1fr;gap:24px;padding:16px 4px;border-bottom:1px solid var(--line)}
-@media(max-width:620px){.spec{grid-template-columns:1fr;gap:6px}}
-.spec .cat{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);padding-top:3px}
-.spec .items{font-family:var(--mono);font-size:14px;color:var(--ink);line-height:1.9}
-.spec .items i{font-style:normal;color:var(--line-2);padding:0 6px}
+/* contact */
+.cta-final{text-align:left}
+.cta-final h2{font-family:var(--disp);font-weight:600;font-size:clamp(34px,6.5vw,76px);line-height:1;letter-spacing:-.03em;max-width:14ch}
+.cta-final h2 em{font-style:normal;color:var(--acc)}
+.cta-final .row{display:flex;gap:14px;margin-top:40px;flex-wrap:wrap}
+.cta-final .links{margin-top:46px;display:flex;gap:28px;flex-wrap:wrap;font-family:var(--mono);font-size:13px}
+.cta-final .links a{color:var(--mut);transition:color .2s}
+.cta-final .links a:hover{color:var(--acc)}
 
-/* contact — editorial form */
-.corr{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,72px);align-items:start}
-@media(max-width:760px){.corr{grid-template-columns:1fr;gap:40px}}
-.corr .pitch{font-family:var(--serif);font-size:clamp(22px,3.2vw,34px);line-height:1.28;color:var(--ink)}
-.corr .pitch em{font-style:italic;color:var(--accent-deep)}
-.corr .direct{margin-top:28px;font-family:var(--mono);font-size:13.5px;line-height:2}
-.corr .direct a{border-bottom:1px solid var(--line-2)}
-.corr .direct a:hover{color:var(--accent);border-color:var(--accent)}
-form{display:flex;flex-direction:column;gap:22px}
-.field{display:flex;flex-direction:column;gap:7px}
-.field label{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
-.field input,.field textarea{font-family:var(--sans);font-size:16px;color:var(--ink);background:transparent;
-  border:0;border-bottom:1.5px solid var(--line-2);padding:8px 2px;transition:border-color .18s var(--ease)}
-.field textarea{resize:vertical;min-height:96px;line-height:1.5}
-.field input::placeholder,.field textarea::placeholder{color:var(--line-2)}
-.field input:focus,.field textarea:focus{outline:none;border-color:var(--accent)}
-.field input:user-invalid,.field textarea:user-invalid{border-color:var(--accent)}
-.hp{position:absolute;left:-9999px}
-.submit{display:inline-flex;align-items:center;gap:9px;align-self:flex-start;cursor:pointer;
-  font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--paper);background:var(--ink);
-  border:0;padding:13px 24px;transition:background .18s var(--ease),gap .15s,opacity .2s}
-.submit:hover{background:var(--accent);gap:13px}
-.submit:disabled{opacity:.55;cursor:wait;background:var(--ink)}
-.formnote{font-family:var(--mono);font-size:12.5px;min-height:18px;transition:color .2s}
-.formnote.ok{color:var(--accent-deep)}
-.formnote.err{color:var(--accent)}
+footer{border-top:1px solid var(--line-soft);padding:30px 0}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:var(--mono);font-size:11.5px;color:var(--dim)}
 
-/* footer / colophon */
-footer{border-top:2px solid var(--ink);padding:34px 0 56px}
-.colophon{display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;
-  font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--faint)}
-.colophon a{color:var(--ink-soft);border-bottom:1px solid var(--line)}
-.colophon a:hover{color:var(--accent);border-color:var(--accent)}
-.colophon .set{max-width:48ch;line-height:1.7}
-
-/* reveal */
-.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal{opacity:0;transform:translateY(16px)}
+.js .reveal{transition:opacity .8s var(--ease),transform .8s var(--ease)}
 .js .reveal.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){
-  *{animation:none!important;scroll-behavior:auto!important}
-  .reveal{opacity:1!important;transform:none!important;transition:none!important}
-}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+html:not(.js) .reveal{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important;transition:none!important}}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:4px}
 </style>
 </head>
 <body>
 
-<div class="runhead"><div class="wrap"><div class="row">
-  <span class="nm">Damion Rashford</span>
-  <nav>
+<header id="hd"><div class="wrap"><nav>
+  <a class="brand" href="#top"><span class="dot"></span>Damion Rashford</a>
+  <div class="nav-r">
     <a href="#work">Work</a>
     <a href="#about">About</a>
-    <a href="#now">Now</a>
     <a href="#stack">Stack</a>
-    <a class="last" href="#contact">Contact ↘</a>
-  </nav>
-</div></div></div>
+    <a class="av" href="#contact">Available ↘</a>
+  </div>
+</nav></div></header>
 
 <main id="top">
 <div class="wrap">
+  <section class="hero">
+    <div class="eyebrow reveal"><span class="ln"></span>AI Agent Developer <b>· open to roles</b></div>
+    <h1 class="reveal">I build the tooling<br>that makes AI agents<br><span class="o">dependable.</span></h1>
+    <p class="sub reveal">Production-grade <b>MCP servers</b> and agentic systems — deterministic, documented, shipped. Creator of <b>RivalSearchMCP</b>, run by 100+ developers.</p>
+    <div class="row reveal">
+      <a class="btn pri" href="#work">See the work</a>
+      <a class="btn sec" href="https://github.com/damionrashford" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="scrollcue"><span class="b"></span>Scroll</div>
+  </section>
+</div>
 
-  <!-- MASTHEAD -->
-  <header class="masthead">
-    <div class="dateline">
-      <span>Damion Rashford</span>
-      <span><span class="cross">✛</span>&nbsp; Index — Vol. MMXXVI</span>
-    </div>
-    <h1 class="title">Agentic systems<br>&amp; the tooling<br>that <span class="amp">holds them up.</span></h1>
-    <div class="deck">
-      <p class="standfirst reveal"><span class="lead">A working index</span> of open-source MCP servers and AI agents — built deterministic, documented, and shipped. Creator of <b>RivalSearchMCP</b>, a research server with <b>101 stars</b> and a growing base of developers running it in production.</p>
-      <div class="colo reveal">
-        <div class="r"><span class="k">Role</span><span class="v">AI Agent Developer</span></div>
-        <div class="r"><span class="k">Day</span><span class="v">GraphQL &amp; developer APIs at Shopify</span></div>
-        <div class="r"><span class="k">Base</span><span class="v">Calgary, AB → Toronto</span></div>
-        <div class="r"><span class="k">Open</span><span class="v open">AI engineering roles</span></div>
-      </div>
-    </div>
-    <div class="mast-cta reveal">
-      <a href="#work">Read the index ↓</a>
-      <a href="https://github.com/damionrashford" target="_blank" rel="noopener">GitHub ↗</a>
-      <a href="mailto:rashforddamion@gmail.com">Email ↗</a>
-    </div>
-  </header>
+<div class="wrap">
+  <div class="band reveal">
+    <div><div class="n tnum"><em>101</em>★</div><div class="l">RivalSearchMCP</div></div>
+    <div><div class="n tnum">152★</div><div class="l">across open source</div></div>
+    <div><div class="n tnum">32</div><div class="l">public repos</div></div>
+    <div><div class="n">MCP</div><div class="l">since day one</div></div>
+  </div>
+</div>
 
-  <!-- WORK INDEX -->
+<div class="wrap">
   <section id="work">
-    <div class="sechead reveal"><h2>Selected Work</h2><span class="meta">Open source · 152★ across 32 repos</span></div>
-    <div class="index">
-      <a class="entry reveal" href="https://github.com/damionrashford/RivalSearchMCP" target="_blank" rel="noopener">
-        <span class="no tnum">01</span>
-        <span class="body"><span class="t">RivalSearchMCP</span>
-          <span class="d">A deterministic research MCP server — five-engine web search, content extraction, and quality-scored results so agents reason over auditable data, not a single black-box call.</span>
-          <span class="tags">Python · FastMCP · flagship</span></span>
-        <span class="right"><span class="star tnum">★ 101</span><span class="arr">↗</span></span>
+    <div class="shead reveal"><span class="ix">01</span><h2>Selected work</h2><span class="rule"></span></div>
+    <div class="rows">
+      <a class="r reveal" href="https://github.com/damionrashford/RivalSearchMCP" target="_blank" rel="noopener">
+        <span class="ix tnum">01</span>
+        <span class="mid"><span class="t">RivalSearchMCP</span><span class="d">Deterministic research MCP server — five-engine search, extraction, quality-scored output so agents reason over auditable data.</span><span class="k">Python · FastMCP</span></span>
+        <span class="end"><span class="st tnum">★ 101</span><span class="ar">↗</span></span>
       </a>
-      <a class="entry reveal" href="https://github.com/damionrashford/media-os" target="_blank" rel="noopener">
-        <span class="no tnum">02</span>
-        <span class="body"><span class="t">Media OS</span>
-          <span class="d">A routed media-production system for Claude Code — specialist agents and mode playbooks spanning encode, stream, color, and delivery.</span>
-          <span class="tags">Python · Multi-agent</span></span>
-        <span class="right"><span class="star tnum">★ 11</span><span class="arr">↗</span></span>
+      <a class="r reveal" href="https://github.com/damionrashford/media-os" target="_blank" rel="noopener">
+        <span class="ix tnum">02</span>
+        <span class="mid"><span class="t">Media OS</span><span class="d">Routed media-production system for Claude Code — specialist agents across encode, stream, color, and delivery.</span><span class="k">Python · Multi-agent</span></span>
+        <span class="end"><span class="st tnum">★ 11</span><span class="ar">↗</span></span>
       </a>
-      <a class="entry reveal" href="https://github.com/damionrashford/Adversaria" target="_blank" rel="noopener">
-        <span class="no tnum">03</span>
-        <span class="body"><span class="t">Adversaria</span>
-          <span class="d">A critical-thinking plugin — adversary, advocate, and judge agents that stress-test an idea before you commit to it.</span>
-          <span class="tags">Python · Agents</span></span>
-        <span class="right"><span class="star tnum">★ 5</span><span class="arr">↗</span></span>
+      <a class="r reveal" href="https://github.com/damionrashford/Adversaria" target="_blank" rel="noopener">
+        <span class="ix tnum">03</span>
+        <span class="mid"><span class="t">Adversaria</span><span class="d">Critical-thinking plugin — adversary, advocate, and judge agents that stress-test an idea before you commit.</span><span class="k">Python · Agents</span></span>
+        <span class="end"><span class="st tnum">★ 5</span><span class="ar">↗</span></span>
       </a>
-      <a class="entry reveal" href="https://github.com/damionrashford/llms-txt-generator-mcp" target="_blank" rel="noopener">
-        <span class="no tnum">04</span>
-        <span class="body"><span class="t">llms-txt-generator</span>
-          <span class="d">An MCP server that auto-generates llms.txt so any site becomes cleanly legible to AI crawlers and agents.</span>
-          <span class="tags">Python · MCP</span></span>
-        <span class="right"><span class="star tnum">★ 4</span><span class="arr">↗</span></span>
+      <a class="r reveal" href="https://github.com/damionrashford/llms-txt-generator-mcp" target="_blank" rel="noopener">
+        <span class="ix tnum">04</span>
+        <span class="mid"><span class="t">llms-txt-generator</span><span class="d">MCP server that auto-generates llms.txt so any site is cleanly legible to AI crawlers and agents.</span><span class="k">Python · MCP</span></span>
+        <span class="end"><span class="st tnum">★ 4</span><span class="ar">↗</span></span>
       </a>
-      <a class="entry reveal" href="https://github.com/damionrashford/htsa" target="_blank" rel="noopener">
-        <span class="no tnum">05</span>
-        <span class="body"><span class="t">HTSA</span>
-          <span class="d">A structured investigation method — five Ws and five Whys with Bayesian reasoning, packaged as a reusable agent toolkit.</span>
-          <span class="tags">TypeScript · Method</span></span>
-        <span class="right"><span class="star tnum">★ 2</span><span class="arr">↗</span></span>
-      </a>
-      <a class="entry reveal" href="https://github.com/damionrashford/modes" target="_blank" rel="noopener">
-        <span class="no tnum">06</span>
-        <span class="body"><span class="t">modes</span>
-          <span class="d">A blueprint for routed multi-agent systems — a router dispatches each request to a specialist running an isolated markdown playbook.</span>
-          <span class="tags">Pattern · Open source</span></span>
-        <span class="right"><span class="star tnum">★ 1</span><span class="arr">↗</span></span>
-      </a>
-      <a class="more reveal" href="https://github.com/damionrashford" target="_blank" rel="noopener">
-        <span class="no">+</span><span>Twenty-six more, all on GitHub — MCP servers, agents, tooling.</span><span>↗</span>
+      <a class="r reveal" href="https://github.com/damionrashford/htsa" target="_blank" rel="noopener">
+        <span class="ix tnum">05</span>
+        <span class="mid"><span class="t">HTSA</span><span class="d">Structured investigation method — five Ws + five Whys with Bayesian reasoning, as a reusable agent toolkit.</span><span class="k">TypeScript</span></span>
+        <span class="end"><span class="st tnum">★ 2</span><span class="ar">↗</span></span>
       </a>
     </div>
+    <a class="allrepos reveal" href="https://github.com/damionrashford" target="_blank" rel="noopener">All 32 repositories on GitHub ↗</a>
   </section>
 
-  <!-- ABOUT -->
   <section id="about">
-    <div class="sechead reveal"><h2>About</h2><span class="meta">On the work</span></div>
-    <div class="essay">
+    <div class="shead reveal"><span class="ix">02</span><h2>About</h2><span class="rule"></span></div>
+    <div class="about">
+      <p class="lead reveal">I'm an investigator by temperament — I build tools that <em>gather and evaluate information</em>, deterministically, at scale.</p>
       <div class="body reveal">
-        <p>I build the tooling layer that makes AI agents dependable — the servers, the retrieval, the scoring, the routing. I'm an investigator by temperament: gathering and evaluating information is the thing I'm best at, and most of what I ship is in service of doing that well, deterministically, at scale.</p>
-        <p>By day I work at <b>Shopify</b>, deep in the GraphQL Admin and Storefront APIs, developer tooling, and production debugging — tracing real issues across logs and live systems for the developers building on the platform. By night I build the open-source MCP servers and agents catalogued above.</p>
-        <p>The through-line is <em>auditable over impressive</em>. I'd rather ship a tool that returns the same answer twice and shows its work than one that demos well and falls over on real data. Stars are honest feedback; production use is better.</p>
-      </div>
-      <aside class="reveal">"Deterministic over clever."<span class="by">— operating principle</span></aside>
-    </div>
-  </section>
-
-  <!-- NOW -->
-  <section id="now">
-    <div class="sechead reveal"><h2>Currently</h2><span class="meta">Updated June 2026</span></div>
-    <div class="log reveal">
-      <div class="logrow"><span class="when">Building</span><span class="what"><b>MCP &amp; agent tooling</b> <span>— extending the open-source index above; deterministic research and routing primitives.</span></span></div>
-      <div class="logrow"><span class="when">Going deep</span><span class="what"><b>ML systems &amp; agent evaluation</b> <span>— deep learning, retrieval quality, and how you actually measure whether an agent is good.</span></span></div>
-      <div class="logrow"><span class="when">Reading</span><span class="what"><span>Papers and source on inference, ranking, and eval harnesses — notes feed back into the tools.</span></span></div>
-      <div class="logrow"><span class="when">Open to</span><span class="what"><b>AI engineering &amp; applied-ML roles</b> <span>— remote or Toronto. The fastest way to reach me is below.</span></span></div>
-    </div>
-  </section>
-
-  <!-- STACK -->
-  <section id="stack">
-    <div class="sechead reveal"><h2>Stack</h2><span class="meta">What I reach for</span></div>
-    <div class="specs reveal">
-      <div class="spec"><span class="cat">Languages</span><span class="items">Python <i>/</i> TypeScript <i>/</i> Bun <i>/</i> SQL</span></div>
-      <div class="spec"><span class="cat">Agents &amp; MCP</span><span class="items">Model Context Protocol <i>/</i> FastMCP <i>/</i> Claude Agent SDK <i>/</i> OpenAI Agents SDK <i>/</i> LangChain</span></div>
-      <div class="spec"><span class="cat">Data &amp; Retrieval</span><span class="items">RAG <i>/</i> embeddings <i>/</i> rerankers <i>/</i> SQLite <i>/</i> vector search</span></div>
-      <div class="spec"><span class="cat">Platform</span><span class="items">GraphQL <i>/</i> FastAPI <i>/</i> React <i>/</i> GitHub Actions <i>/</i> log &amp; trace analysis</span></div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="sechead reveal"><h2>Correspondence</h2><span class="meta">Get in touch</span></div>
-    <div class="corr">
-      <div class="reveal">
-        <p class="pitch">Building something agentic, hiring for AI engineering, or just want to compare notes? <em>Write to me.</em></p>
-        <div class="direct">
-          <div><a href="mailto:rashforddamion@gmail.com">rashforddamion@gmail.com</a></div>
-          <div><a href="https://github.com/damionrashford" target="_blank" rel="noopener">github.com/damionrashford ↗</a></div>
-          <div><a href="https://www.linkedin.com/in/damion-rashford/" target="_blank" rel="noopener">linkedin.com/in/damion-rashford ↗</a></div>
+        <p>The tooling layer for AI agents is where I work: the servers, retrieval, scoring, and routing that turn an agentic demo into something you can run in production.</p>
+        <p>By day I'm at <b>Shopify</b>, deep in the GraphQL Admin & Storefront APIs, developer tooling, and live production debugging. By night I build the open-source MCP servers and agents above.</p>
+        <p>The through-line is <b>auditable over impressive</b> — a tool that returns the same answer twice and shows its work beats one that demos well and falls over on real data.</p>
+        <div class="pr">
+          <div class="li"><span class="k">Role</span><span class="v">AI Agent Developer</span></div>
+          <div class="li"><span class="k">Based</span><span class="v">Calgary, AB → Toronto</span></div>
+          <div class="li"><span class="k">Status</span><span class="v acc">Open to AI engineering roles</span></div>
         </div>
       </div>
-      <form id="cf" class="reveal" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_ACCESS_KEY" />
-        <input type="hidden" name="subject" value="New message via damionrashford.com" />
-        <input type="hidden" name="from_name" value="damionrashford.com" />
-        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" />
-        <div class="field"><label for="n">Name</label><input id="n" name="name" type="text" placeholder="Your name" required /></div>
-        <div class="field"><label for="e">Email</label><input id="e" name="email" type="email" placeholder="you@domain.com" required /></div>
-        <div class="field"><label for="m">Message</label><textarea id="m" name="message" placeholder="What's on your mind?" required></textarea></div>
-        <button class="submit" type="submit">Send message →</button>
-        <p class="formnote mono" id="note" role="status" aria-live="polite"></p>
-      </form>
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="shead reveal"><span class="ix">03</span><h2>Stack</h2><span class="rule"></span></div>
+    <div class="grid2 reveal">
+      <div class="cell"><h4>Languages</h4><ul><li>Python</li><li>TypeScript</li><li>Bun</li><li>SQL</li></ul></div>
+      <div class="cell"><h4>Agents & MCP</h4><ul><li>Model Context Protocol</li><li>FastMCP</li><li>Claude Agent SDK</li><li>OpenAI Agents SDK</li><li>LangChain</li></ul></div>
+      <div class="cell"><h4>Data & Retrieval</h4><ul><li>RAG</li><li>Embeddings</li><li>Rerankers</li><li>SQLite</li><li>Vector search</li></ul></div>
+      <div class="cell"><h4>Platform</h4><ul><li>GraphQL</li><li>FastAPI</li><li>React</li><li>GitHub Actions</li><li>Log & trace analysis</li></ul></div>
+    </div>
+  </section>
+
+  <section id="contact" class="cta-final">
+    <div class="shead reveal"><span class="ix">04</span><h2>Contact</h2><span class="rule"></span></div>
+    <h2 class="reveal">Let's build something <em>agentic.</em></h2>
+    <div class="row reveal">
+      <a class="btn pri" href="mailto:rashforddamion@gmail.com">rashforddamion@gmail.com</a>
+      <a class="btn sec" href="https://github.com/damionrashford" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="links reveal">
+      <a href="mailto:rashforddamion@gmail.com">Email</a>
+      <a href="https://github.com/damionrashford" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/damion-rashford/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </section>
 </div>
 </main>
 
-<footer><div class="wrap"><div class="colophon">
-  <span class="set">Set in Fraunces, Hanken Grotesk &amp; IBM Plex Mono. Composed in Calgary, MMXXVI. <span class="cross">✛</span></span>
-  <span>© 2026 Damion Rashford · <a href="https://github.com/damionrashford" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/damion-rashford/" target="_blank" rel="noopener">LinkedIn</a> · <a href="mailto:rashforddamion@gmail.com">Email</a></span>
+<footer><div class="wrap"><div class="foot">
+  <span>© 2026 Damion Rashford</span>
+  <span>Built in Calgary · damionrashford.com</span>
 </div></div></footer>
 
 <script>
-// scroll reveal
-const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
-document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(Math.min(i,5)*45)+'ms';io.observe(el)});
-
-// contact form → Web3Forms
-const f=document.getElementById('cf'),note=document.getElementById('note'),btn=f.querySelector('.submit');
-f.addEventListener('submit',async(ev)=>{
-  ev.preventDefault();
-  const key=f.access_key.value;
-  if(key.startsWith('REPLACE_')){note.className='formnote mono err';note.textContent='Form not yet configured — email me directly above.';return;}
-  btn.disabled=true;const lab=btn.textContent;btn.textContent='Sending…';note.className='formnote mono';note.textContent='';
-  try{
-    const r=await fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)});
-    const j=await r.json();
-    if(j.success){f.reset();note.className='formnote mono ok';note.textContent='Sent. I’ll get back to you.';}
-    else{note.className='formnote mono err';note.textContent='Something went wrong — email me directly instead.';}
-  }catch(_){note.className='formnote mono err';note.textContent='Network error — email me directly instead.';}
-  finally{btn.disabled=false;btn.textContent=lab;}
-});
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>{hd.classList.toggle('scrolled',scrollY>20)},{passive:true});
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(Math.min(i,4)*60)+'ms';io.observe(el)});
 </script>
 </body>
 </html>
