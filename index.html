@@ -148,9 +148,10 @@ h2{font-family:'Space Grotesk';font-weight:600;letter-spacing:-.025em;font-size:
 .featured .badge{position:absolute;top:18px;right:18px;font-family:'JetBrains Mono';font-size:12px;color:var(--accent);
   border:1px solid var(--line);background:oklch(0.18 0.02 264 / .7);padding:5px 12px;border-radius:99px}
 .featured h3{font-family:'Space Grotesk';font-size:24px;font-weight:600;letter-spacing:-.01em;margin-bottom:6px}
-.featured .star{font-family:'JetBrains Mono';font-size:13px;color:var(--accent);margin-bottom:14px;display:block}
+.featured .star{font-size:13px;font-weight:600;color:var(--accent);margin-bottom:14px;display:block}
 .featured p{color:var(--muted);font-size:15px}
-.featured .lang{font-family:'JetBrains Mono';font-size:12px;color:var(--faint);margin-top:18px;display:inline-block}
+.featured .lang{font-size:12px;color:var(--faint);margin-top:18px;display:inline-block}
+.featured .badge{font-family:inherit}
 
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 @media(max-width:760px){.grid{grid-template-columns:1fr}}
@@ -159,19 +160,19 @@ h2{font-family:'Space Grotesk';font-weight:600;letter-spacing:-.025em;font-size:
 .card::after{content:"↗";position:absolute;top:20px;right:20px;color:var(--faint);transition:color .2s,transform .2s var(--ease)}
 .card:hover{transform:translateY(-4px);border-color:var(--accent);background:var(--surface-2)}
 .card:hover::after{color:var(--accent);transform:translate(2px,-2px)}
-.card .idx{font-family:'JetBrains Mono';font-size:12px;color:var(--faint);margin-bottom:14px}
+.card .idx{font-size:12px;font-weight:500;color:var(--faint);margin-bottom:14px}
 .card h3{font-family:'Space Grotesk';font-size:18px;font-weight:600;letter-spacing:-.01em;margin-bottom:6px;padding-right:24px}
-.card .star{font-family:'JetBrains Mono';font-size:12.5px;color:var(--accent)}
+.card .star{font-size:12.5px;font-weight:600;color:var(--accent)}
 .card p{color:var(--muted);font-size:14px;line-height:1.55;margin-top:12px}
-.card .lang{display:inline-block;margin-top:16px;font-family:'JetBrains Mono';font-size:11.5px;color:var(--faint)}
+.card .lang{display:inline-block;margin-top:16px;font-size:11.5px;color:var(--faint)}
 
 /* stack */
 .stackgroups{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
 @media(max-width:760px){.stackgroups{grid-template-columns:1fr;gap:28px}}
 .stackgroups h4{font-family:'JetBrains Mono';font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:16px}
 .chips{display:flex;flex-wrap:wrap;gap:9px}
-.chip{font-family:'JetBrains Mono';font-size:13px;color:var(--muted);
-  border:1px solid var(--line-soft);background:oklch(0.21 0.022 264 / .5);padding:8px 13px;border-radius:var(--r-sm);transition:color .2s,border-color .2s,transform .15s}
+.chip{font-size:13.5px;font-weight:500;color:var(--muted);
+  border:1px solid var(--line-soft);background:oklch(0.21 0.022 264 / .5);padding:8px 14px;border-radius:var(--r-sm);transition:color .2s,border-color .2s,transform .15s}
 .chip:hover{color:var(--accent);border-color:var(--accent);transform:translateY(-2px)}
 
 /* contact */
@@ -280,7 +281,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
         <p>A deterministic research MCP server — five-engine web search, content extraction, and quality-scored results so AI agents reason over auditable data instead of a single black-box call. My most-used project.</p>
         <span class="lang">flagship → github.com/damionrashford/RivalSearchMCP</span>
       </div>
-      <div class="vis"><span class="badge mono">most used</span><span class="glyph">RS</span></div>
+      <div class="vis"><span class="badge">most used</span><span class="glyph">RS</span></div>
     </a>
 
     <div class="grid">
@@ -357,7 +358,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
 </main>
 
 <footer><div class="wrap"><div class="row">
-  <span class="mono">© 2026 Damion Rashford</span>
+  <span>© 2026 Damion Rashford</span>
   <span class="mono"><a href="https://github.com/damionrashford" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/damion-rashford/" target="_blank" rel="noopener">LinkedIn</a> · <a href="mailto:rashforddamion@gmail.com">Email</a></span>
 </div></div></footer>
 
