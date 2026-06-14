@@ -1,0 +1,70 @@
+# Damion Rashford — Full Profile
+
+> Damion Rashford is an AI Agent Developer who builds the tooling layer that makes AI agents dependable: production-grade Model Context Protocol (MCP) servers, agent orchestration, retrieval, and the deterministic infrastructure underneath. He is the creator of RivalSearchMCP (101★) and has earned 152 GitHub stars across 32 public open-source repositories. He works at Shopify on GraphQL and developer APIs and is open to AI engineering and applied-ML roles.
+
+This is the comprehensive version of https://damionrashford.com/llms.txt, intended for AI search engines and agents that want full context. Every fact here is verifiable from the linked public GitHub repositories. Last updated 2026-06.
+
+## Who he is
+
+Damion Rashford is an investigator by temperament — gathering and evaluating information is his core strength, and most of what he ships exists to do that well, deterministically, at scale. His operating principle is "auditable over impressive": he would rather ship a tool that returns the same answer twice and shows its work than one that demos well and falls over on real data.
+
+By day he works at Shopify, where he works hands-on with the GraphQL Admin and Storefront APIs, developer tooling, and live production debugging — tracing real issues across logs and live systems for the developers building on the platform. By night he builds the open-source MCP servers and agent frameworks described below. He is based in Calgary, Alberta, Canada, relocating to Toronto, and is open to AI engineering and applied-ML roles (remote or Toronto).
+
+## Projects in depth
+
+### RivalSearchMCP (flagship — 101★, Python, FastMCP, MIT)
+
+A deterministic research MCP server that gives any AI agent auditable access to the open web in a single connection. It is a FastMCP 3.x server exposing 9 specialized tools that search, fetch, score, and compare information across:
+
+- 5 web search engines (DuckDuckGo, Bing, Yahoo, Mojeek, Wikipedia), concurrent and deduplicated
+- 9 social platforms (Reddit, Hacker News, Stack Overflow, Dev.to, Medium, Product Hunt, Bluesky, Lobste.rs, Lemmy)
+- 5 news sources (Google News, Bing News, The Guardian, GDELT, DuckDuckGo News) with time-range filtering
+- 5 academic databases (OpenAlex, CrossRef, arXiv, PubMed, Europe PMC) and 4 dataset hubs (Kaggle, HuggingFace, Dataverse, Zenodo)
+- GitHub repositories, documents (PDF, Word, text, images with OCR), and website traversal
+
+No LLM runs inside the server — every tool returns deterministic, auditable output, and the caller's model does the synthesis. Distinguishing capabilities: automatic quality scoring (a 0–100 tier/freshness/corroboration/citation score on every result plus an aggregate confidence signal), conflict detection (numeric, date, and polarity disagreements surfaced as a first-class signal rather than averaged away), entity profiles (fan-out to 8 sources in parallel into one unified report), and production hygiene (per-tool timeouts, rate limiting at 100 requests/minute, response-size caps, and middleware observability). It requires no API keys for core tools. Repository: https://github.com/damionrashford/RivalSearchMCP
+
+### Media OS (11★, Python)
+
+A routed media-production system for Claude Code: specialist agents and per-task mode playbooks spanning encode, stream, color, and delivery pipelines. A router dispatches each media request to the right specialist. Repository: https://github.com/damionrashford/media-os
+
+### Adversaria (5★, Python)
+
+A critical-thinking plugin built around three specialized agents — adversary, advocate, and judge — that stress-test an idea from opposing positions before you commit to it. Repository: https://github.com/damionrashford/Adversaria
+
+### llms-txt-generator (4★, Python)
+
+An MCP server that automatically generates llms.txt and llms-full.txt files so any website becomes cleanly legible to AI crawlers and agents. Repository: https://github.com/damionrashford/llms-txt-generator-mcp
+
+### HTSA (2★, TypeScript)
+
+A structured investigation method packaged as a reusable agent toolkit: the five Ws and five Whys combined with Bayesian reasoning. Repository: https://github.com/damionrashford/htsa
+
+### modes (1★)
+
+A blueprint and reference implementation for routed multi-agent systems: a router skill dispatches each request to a specialist running an isolated markdown playbook in fresh context. Repository: https://github.com/damionrashford/modes
+
+There are 32 public repositories in total at https://github.com/damionrashford.
+
+## Skills and stack
+
+- Languages: Python, TypeScript, Bun, SQL
+- Agents & MCP: Model Context Protocol, FastMCP, Claude Agent SDK, OpenAI Agents SDK, LangChain
+- Data & retrieval: RAG, embeddings, rerankers, vector search, SQLite
+- Platform & APIs: GraphQL (Admin, Storefront), FastAPI, React, GitHub Actions, REST, webhooks
+- Methods: deterministic tool design, quality scoring, log and trace analysis, production debugging
+
+## FAQ
+
+- **What does Damion Rashford do?** He builds the tooling layer for AI agents — MCP servers, retrieval, scoring, and routing — and works at Shopify on GraphQL developer APIs.
+- **What is RivalSearchMCP and why does it matter?** It is his flagship: a deterministic research MCP server (101★) that lets an AI agent research the open web with auditable, quality-scored, conflict-aware results through one connection, with no API keys and no in-server LLM.
+- **What is the Model Context Protocol (MCP)?** A standard that lets AI agents call external tools and data sources through a uniform interface. Damion builds MCP servers and has shipped them since the protocol's early days.
+- **Is Damion open to opportunities?** Yes — AI engineering and applied-ML roles, remote or Toronto-based. The best way to reach him is the contact form at https://damionrashford.com/#contact.
+- **What makes his approach distinctive?** Determinism and auditability — reproducible output that shows its work, over impressive-but-fragile demos.
+- **Where can I see his work?** https://github.com/damionrashford and https://damionrashford.com.
+
+## Contact
+
+- Contact form: https://damionrashford.com/#contact
+- GitHub: https://github.com/damionrashford
+- LinkedIn: https://www.linkedin.com/in/damion-rashford/

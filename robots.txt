@@ -3,6 +3,7 @@ Allow: /
 
 # AI agents & crawlers — structured context:
 # https://damionrashford.com/llms.txt
+# https://damionrashford.com/llms-full.txt
 # https://damionrashford.com/agents.md
 
 Sitemap: https://damionrashford.com/sitemap.xml

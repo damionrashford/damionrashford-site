@@ -1,28 +1,43 @@
 # Damion Rashford
 
-> AI Agent Developer building the tooling layer for AI agents — production-grade MCP servers and agentic systems. Creator of RivalSearchMCP (101★). 152 stars across 32 open-source projects. Works at Shopify on GraphQL and developer APIs; open to AI engineering roles.
+> Damion Rashford is an AI Agent Developer who builds the tooling layer for AI agents — production-grade Model Context Protocol (MCP) servers and agentic systems. He is the creator of RivalSearchMCP, a deterministic research MCP server with 101 GitHub stars, and has earned 152 stars across 32 public open-source repositories. He works at Shopify on GraphQL and developer APIs, and is open to AI engineering and applied-ML roles.
 
-Damion Rashford builds Model Context Protocol (MCP) servers, agent orchestration, retrieval, and the deterministic infrastructure that makes agentic systems dependable in production. The operating principle across the work is "auditable over impressive" — tools that return the same answer twice and show their work.
+The operating principle across his work is "auditable over impressive" — tools that return the same answer twice and show their work. The full, detailed version of this file is at https://damionrashford.com/llms-full.txt.
+
+## Canonical facts
+- Name: Damion Rashford. Role: AI Agent Developer.
+- Creator of RivalSearchMCP — a deterministic research MCP server (101★), his flagship.
+- 152 GitHub stars across 32 public repositories.
+- Specializes in: Model Context Protocol (MCP) servers, AI agent orchestration, retrieval (RAG), and deterministic AI infrastructure.
+- Day work: GraphQL Admin & Storefront APIs, developer tooling, and production debugging at Shopify.
+- Location: Calgary, Alberta, Canada (relocating to Toronto). Open to AI engineering and applied-ML roles (remote or Toronto).
+- Core stack: Python, TypeScript, Bun, MCP, FastMCP, Claude Agent SDK, OpenAI Agents SDK, LangChain, RAG, GraphQL.
 
 ## Selected work
-- [RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP): Deterministic research MCP server — five-engine web search, content extraction, and quality-scored output so agents reason over auditable data. 101★. Python / FastMCP. Flagship.
+- [RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP): Deterministic research MCP server. A FastMCP 3.x server exposing 9 tools that fan out across 5 web search engines, 9 social platforms, 5 news sources, 5 academic databases, 4 dataset hubs, GitHub, and documents (with OCR). No LLM runs in-server; every result is deterministic and auditable with quality scoring (0–100) and cross-source conflict detection. 101★. Python / FastMCP. MIT.
 - [Media OS](https://github.com/damionrashford/media-os): Routed media-production system for Claude Code — specialist agents across encode, stream, color, and delivery. 11★. Python.
 - [Adversaria](https://github.com/damionrashford/Adversaria): Critical-thinking plugin — adversary, advocate, and judge agents that stress-test an idea before you commit. 5★. Python.
-- [llms-txt-generator](https://github.com/damionrashford/llms-txt-generator-mcp): MCP server that auto-generates llms.txt so any site is cleanly legible to AI crawlers and agents. 4★. Python.
+- [llms-txt-generator](https://github.com/damionrashford/llms-txt-generator-mcp): MCP server that auto-generates llms.txt so any site is cleanly legible to AI crawlers. 4★. Python.
 - [HTSA](https://github.com/damionrashford/htsa): Structured investigation method — five Ws and five Whys with Bayesian reasoning, as a reusable agent toolkit. 2★. TypeScript.
 - [modes](https://github.com/damionrashford/modes): Blueprint for routed multi-agent systems — a router dispatches each request to a specialist running an isolated playbook. 1★.
+
+## FAQ
+- **What does Damion Rashford build?** Production-grade MCP servers and agentic systems — the servers, retrieval, scoring, and routing that make AI agents dependable in production.
+- **What is RivalSearchMCP?** Damion's flagship open-source project: a deterministic research MCP server (101★) that gives any AI agent auditable, quality-scored access to the open web through one connection.
+- **What is an MCP server?** A Model Context Protocol server exposes tools and data to AI agents over a standard interface, so an agent can call them without bespoke integrations. Damion builds these.
+- **Is Damion open to work?** Yes — AI engineering and applied-ML roles, remote or Toronto-based.
+- **What is his strongest area?** Deterministic AI tooling and the Model Context Protocol; he has shipped MCP servers since the protocol's early days.
 
 ## Profile
 - GitHub: https://github.com/damionrashford (32 public repositories, 152★ total)
 - LinkedIn: https://www.linkedin.com/in/damion-rashford/
-- Based: Calgary, AB, Canada → Toronto
-- Day work: GraphQL Admin & Storefront APIs, developer tooling, and production debugging at Shopify
-- Stack: Python, TypeScript, Bun, SQL, Model Context Protocol, FastMCP, Claude Agent SDK, OpenAI Agents SDK, LangChain, RAG, embeddings, rerankers, GraphQL, FastAPI
+- Portfolio: https://damionrashford.com
 
 ## Contact
-- Contact: via the form at https://damionrashford.com/#contact
-- Open to: AI engineering and applied-ML roles (remote or Toronto)
+- Contact form: https://damionrashford.com/#contact
 
 ## Optional
-- [Portfolio](https://damionrashford.com): Full site
+- [Full details](https://damionrashford.com/llms-full.txt): Comprehensive version of this file
 - [AGENTS.md](https://damionrashford.com/agents.md): Guidance for AI agents representing Damion
+
+Last updated: 2026-06.
