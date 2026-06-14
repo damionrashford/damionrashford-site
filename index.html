@@ -69,7 +69,7 @@ nav{display:flex;align-items:center;justify-content:space-between;height:68px}
 .eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;color:var(--mut);display:flex;align-items:center;gap:12px;margin-bottom:34px}
 .eyebrow .ln{width:34px;height:1px;background:var(--line)}
 .eyebrow b{color:var(--acc);font-weight:400}
-h1{font-family:var(--disp);font-weight:600;font-size:clamp(44px,8.4vw,108px);line-height:.97;letter-spacing:-.035em}
+h1{font-family:var(--disp);font-weight:600;font-size:clamp(44px,8.4vw,108px);line-height:.97;letter-spacing:-.035em;overflow-wrap:anywhere;min-width:0}
 h1 .o{color:var(--dim)}
 .hero .sub{margin-top:34px;max-width:46ch;font-size:clamp(16.5px,1.9vw,20px);color:var(--mut)}
 .hero .sub b{color:var(--fg);font-weight:500}
@@ -100,13 +100,12 @@ section{padding:clamp(72px,10vw,128px) 0}
 
 /* work rows */
 .rows{display:flex;flex-direction:column}
-.r{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;
-  padding:30px 8px;border-top:1px solid var(--line-soft);position:relative;transition:padding .25s var(--ease)}
+.r{display:grid;grid-template-columns:96px 1fr auto;gap:28px;align-items:start;
+  padding:34px 8px 34px 20px;border-top:1px solid var(--line-soft);position:relative}
 .r:last-child{border-bottom:1px solid var(--line-soft)}
-.r::before{content:"";position:absolute;left:0;top:-1px;height:calc(100% + 1px);width:0;background:var(--acc);transition:width .25s var(--ease)}
-.r:hover{padding-left:24px}
-.r:hover::before{width:2px}
-.r .ix{font-family:var(--mono);font-size:13px;color:var(--dim);transition:color .2s}
+.r::before{content:"";position:absolute;left:0;top:-1px;height:calc(100% + 1px);width:0;background:var(--acc);transition:width .3s var(--ease)}
+.r:hover::before{width:3px}
+.r .ix{font-family:var(--disp);font-weight:600;font-size:clamp(30px,4vw,52px);line-height:.9;letter-spacing:-.03em;color:var(--line);transition:color .25s var(--ease)}
 .r:hover .ix{color:var(--acc)}
 .r .mid .t{display:block;font-family:var(--disp);font-weight:600;font-size:clamp(20px,2.6vw,27px);letter-spacing:-.015em;transition:color .2s}
 .r:hover .mid .t{color:var(--acc)}
