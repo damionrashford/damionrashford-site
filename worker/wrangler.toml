@@ -1,0 +1,12 @@
+name = "dr-contact"
+main = "src/index.js"
+compatibility_date = "2026-06-01"
+
+[vars]
+TO_EMAIL = "rashforddamion@gmail.com"
+# Until you verify damionrashford.com in Resend, leave FROM_EMAIL as the Resend test sender.
+# After verifying the domain in Resend, change to e.g. "Portfolio <hello@damionrashford.com>"
+FROM_EMAIL = "Portfolio <onboarding@resend.dev>"
+ALLOWED_ORIGIN = "https://damionrashford.com"
+
+# Secret (do NOT put here) — set with:  wrangler secret put RESEND_API_KEY
