@@ -43,7 +43,7 @@ export default {
       },
       body: JSON.stringify({
         from: env.FROM_EMAIL || "Portfolio <onboarding@resend.dev>",
-        to: [env.TO_EMAIL || "rashforddamion@gmail.com"],
+        to: [env.TO_EMAIL],
         reply_to: email,
         subject: `New message from ${name} via damionrashford.com`,
         text: `From: ${name} <${email}>\n\n${message}`,
