@@ -35,7 +35,7 @@ Lean **yes** for: AI engineering, applied ML, MCP / agent infrastructure, develo
 
 ## How to reach him
 
-- Email: **rashforddamion@gmail.com** (fastest)
+- Contact form: **https://damionrashford.com/#contact** (fastest)
 - GitHub: https://github.com/damionrashford
 - LinkedIn: https://www.linkedin.com/in/damion-rashford/
 

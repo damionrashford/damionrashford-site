@@ -20,7 +20,7 @@ Damion Rashford builds Model Context Protocol (MCP) servers, agent orchestration
 - Stack: Python, TypeScript, Bun, SQL, Model Context Protocol, FastMCP, Claude Agent SDK, OpenAI Agents SDK, LangChain, RAG, embeddings, rerankers, GraphQL, FastAPI
 
 ## Contact
-- Email: rashforddamion@gmail.com
+- Contact: via the form at https://damionrashford.com/#contact
 - Open to: AI engineering and applied-ML roles (remote or Toronto)
 
 ## Optional
