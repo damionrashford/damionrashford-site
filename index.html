@@ -7,6 +7,7 @@
 <meta name="description" content="Damion Rashford builds the tooling layer for AI agents — production MCP servers and agentic systems. Creator of RivalSearchMCP. 152★ across 32 open-source projects." />
 <meta name="author" content="Damion Rashford" />
 <link rel="canonical" href="https://damionrashford.com/" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="alternate" type="text/markdown" href="/llms.txt" title="llms.txt" />
 <meta property="og:type" content="profile" />
 <meta property="og:title" content="Damion Rashford — AI Agent Developer" />
@@ -144,6 +145,58 @@ section{padding:clamp(72px,10vw,128px) 0}
 .grid2 .cell ul{list-style:none;display:flex;flex-direction:column;gap:9px}
 .grid2 .cell li{font-size:14.5px;color:var(--fg)}
 
+/* case study */
+.case{border:1px solid var(--line-soft);border-radius:14px;overflow:hidden;background:linear-gradient(180deg,var(--bg-2),var(--bg))}
+.case .top{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:30px 30px 24px;border-bottom:1px solid var(--line-soft)}
+.case .top .h .badge{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:12px;display:inline-block}
+.case .top .h h3{font-family:var(--disp);font-weight:600;font-size:clamp(26px,4vw,40px);letter-spacing:-.025em;line-height:1}
+.case .top .h p{color:var(--mut);font-size:15px;margin-top:10px;max-width:48ch}
+.case .top .meta{font-family:var(--mono);font-size:13px;text-align:right;white-space:nowrap}
+.case .top .meta .st{color:var(--acc);font-size:20px;font-weight:500}
+.case .top .meta .sub{color:var(--dim);font-size:11.5px;margin-top:4px}
+.case .grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
+@media(max-width:820px){.case .grid{grid-template-columns:1fr}}
+.case .col{padding:30px}
+.case .col+.col{border-left:1px solid var(--line-soft)}
+@media(max-width:820px){.case .col+.col{border-left:0;border-top:1px solid var(--line-soft)}}
+.case h4{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:14px}
+.case .col p{color:var(--mut);font-size:15px;line-height:1.6}
+.case .col p b{color:var(--fg);font-weight:500}
+.case .caps{list-style:none;display:flex;flex-direction:column;gap:0;margin-top:4px}
+.case .caps li{display:grid;grid-template-columns:18px 1fr;gap:10px;padding:11px 0;border-top:1px solid var(--line-soft);font-size:14px;color:var(--mut)}
+.case .caps li:first-child{border-top:0;padding-top:0}
+.case .caps li b{color:var(--fg);font-weight:500}
+.case .caps li .m{color:var(--acc);font-family:var(--mono);font-size:12px;padding-top:3px}
+.code{font-family:var(--mono);font-size:12.5px;line-height:1.75;background:oklch(0.13 0.005 270);border:1px solid var(--line-soft);border-radius:10px;
+  padding:16px 18px;overflow-x:auto;color:var(--mut);margin-top:6px;white-space:pre}
+.code .ck{color:var(--acc)}.code .cs{color:oklch(0.8 0.12 150)}.code .cc{color:var(--dim)}
+.case .foot{display:flex;gap:24px;flex-wrap:wrap;padding:22px 30px;border-top:1px solid var(--line-soft);font-family:var(--mono);font-size:13px}
+.case .foot a{color:var(--fg);border-bottom:1px solid var(--line);padding-bottom:3px;transition:color .2s,border-color .2s}
+.case .foot a:hover{color:var(--acc);border-color:var(--acc)}
+.case .foot .specs{margin-left:auto;color:var(--dim)}
+@media(max-width:600px){.case .foot .specs{margin-left:0;flex-basis:100%}}
+
+/* now log */
+.now{display:flex;flex-direction:column;border-top:1px solid var(--line-soft)}
+.now .nrow{display:grid;grid-template-columns:140px 1fr;gap:28px;padding:20px 4px;border-bottom:1px solid var(--line-soft)}
+@media(max-width:620px){.now .nrow{grid-template-columns:1fr;gap:6px}}
+.now .when{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);padding-top:3px}
+.now .what{font-size:16px;color:var(--fg)}
+.now .what span{color:var(--mut)}
+
+/* contact form */
+.cform{display:flex;flex-direction:column;gap:20px}
+.cf-field{display:flex;flex-direction:column;gap:7px}
+.cf-field label{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.cf-field input,.cf-field textarea{font-family:var(--body);font-size:15px;color:var(--fg);background:var(--bg-2);
+  border:1px solid var(--line-soft);border-radius:8px;padding:12px 13px;transition:border-color .2s var(--ease)}
+.cf-field textarea{resize:vertical;min-height:110px;line-height:1.5}
+.cf-field input::placeholder,.cf-field textarea::placeholder{color:var(--dim)}
+.cf-field input:focus,.cf-field textarea:focus{outline:none;border-color:var(--acc)}
+.cf-hp{position:absolute;left:-9999px}
+.cf-note{font-family:var(--mono);font-size:12.5px;min-height:18px;color:var(--dim)}
+.cf-note.ok{color:var(--acc)}.cf-note.err{color:oklch(0.7 0.16 25)}
+
 /* contact */
 .cta-final{text-align:left}
 .cta-final h2{font-family:var(--disp);font-weight:600;font-size:clamp(34px,6.5vw,76px);line-height:1;letter-spacing:-.03em;max-width:14ch}
@@ -175,7 +228,7 @@ html:not(.js) .reveal{opacity:1;transform:none}
   <div class="nav-r">
     <a href="#work">Work</a>
     <a href="#about">About</a>
-    <a href="#stack">Stack</a>
+    <a href="#now">Now</a>
     <a class="av" href="#contact">Available ↘</a>
   </div>
 </nav></div></header>
@@ -204,40 +257,85 @@ html:not(.js) .reveal{opacity:1;transform:none}
 </div>
 
 <div class="wrap">
+  <section id="flagship">
+    <div class="shead reveal"><span class="ix">01</span><h2>Flagship</h2><span class="rule"></span></div>
+    <div class="case reveal">
+      <div class="top">
+        <div class="h">
+          <span class="badge">Case study · most used</span>
+          <h3>RivalSearchMCP</h3>
+          <p>A deterministic research server that gives any AI agent auditable access to the open web — in one connection.</p>
+        </div>
+        <div class="meta"><div class="st tnum">★ 101</div><div class="sub">MIT · FastMCP 3.x · Python</div></div>
+      </div>
+      <div class="grid">
+        <div class="col">
+          <h4>The problem</h4>
+          <p>An agent that researches the open web needs many sources, and most search tooling is <b>non-deterministic and unauditable</b> — you can't tell why a result surfaced, can't trust it twice, and wiring up a separate integration per source is its own project.</p>
+          <h4 style="margin-top:30px">Key capabilities</h4>
+          <ul class="caps">
+            <li><span class="m">01</span><span><b>Quality scoring.</b> Every result carries a 0–100 tier / freshness / corroboration / citation score, with an aggregate confidence signal per response.</span></li>
+            <li><span class="m">02</span><span><b>Conflict detection.</b> Surfaces numeric, date, and polarity disagreements across sources as a first-class signal instead of averaging them away.</span></li>
+            <li><span class="m">03</span><span><b>Entity profiles.</b> Fans out to 8 sources in parallel and returns one unified report with confidence.</span></li>
+            <li><span class="m">04</span><span><b>Production hygiene.</b> Per-tool timeouts, rate limiting (100 req/min), response-size caps, and middleware observability.</span></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>How it works</h4>
+          <p>One MCP connection exposes <b>9 specialized tools</b> that fan out across 5 web engines, 9 social platforms, 5 news sources, 5 academic databases + 4 dataset hubs, GitHub, and documents (with OCR). <b>No LLM runs inside the server</b> — every tool returns deterministic output with a parseable <span class="mono" style="color:var(--mut)">structuredContent</span> dict, so agents chain results without regex-parsing prose.</p>
+          <h4 style="margin-top:30px">Connect</h4>
+<div class="code"><span class="cc"># add to your MCP client — no API keys</span>
+{
+  <span class="ck">"mcpServers"</span>: {
+    <span class="ck">"RivalSearchMCP"</span>: {
+      <span class="ck">"url"</span>: <span class="cs">"https://RivalSearchMCP.fastmcp.app/mcp"</span>
+    }
+  }
+}</div>
+        </div>
+      </div>
+      <div class="foot">
+        <a href="https://github.com/damionrashford/RivalSearchMCP" target="_blank" rel="noopener">View on GitHub ↗</a>
+        <a href="https://RivalSearchMCP.fastmcp.app/mcp" target="_blank" rel="noopener">Live server ↗</a>
+        <span class="specs">9 tools · 28+ sources · zero API keys</span>
+      </div>
+    </div>
+  </section>
+
   <section id="work">
-    <div class="shead reveal"><span class="ix">01</span><h2>Selected work</h2><span class="rule"></span></div>
+    <div class="shead reveal"><span class="ix">02</span><h2>Selected work</h2><span class="rule"></span></div>
     <div class="rows">
-      <a class="r reveal" href="https://github.com/damionrashford/RivalSearchMCP" target="_blank" rel="noopener">
-        <span class="ix tnum">01</span>
-        <span class="mid"><span class="t">RivalSearchMCP</span><span class="d">Deterministic research MCP server — five-engine search, extraction, quality-scored output so agents reason over auditable data.</span><span class="k">Python · FastMCP</span></span>
-        <span class="end"><span class="st tnum">★ 101</span><span class="ar">↗</span></span>
-      </a>
       <a class="r reveal" href="https://github.com/damionrashford/media-os" target="_blank" rel="noopener">
-        <span class="ix tnum">02</span>
+        <span class="ix tnum">01</span>
         <span class="mid"><span class="t">Media OS</span><span class="d">Routed media-production system for Claude Code — specialist agents across encode, stream, color, and delivery.</span><span class="k">Python · Multi-agent</span></span>
         <span class="end"><span class="st tnum">★ 11</span><span class="ar">↗</span></span>
       </a>
       <a class="r reveal" href="https://github.com/damionrashford/Adversaria" target="_blank" rel="noopener">
-        <span class="ix tnum">03</span>
+        <span class="ix tnum">02</span>
         <span class="mid"><span class="t">Adversaria</span><span class="d">Critical-thinking plugin — adversary, advocate, and judge agents that stress-test an idea before you commit.</span><span class="k">Python · Agents</span></span>
         <span class="end"><span class="st tnum">★ 5</span><span class="ar">↗</span></span>
       </a>
       <a class="r reveal" href="https://github.com/damionrashford/llms-txt-generator-mcp" target="_blank" rel="noopener">
-        <span class="ix tnum">04</span>
+        <span class="ix tnum">03</span>
         <span class="mid"><span class="t">llms-txt-generator</span><span class="d">MCP server that auto-generates llms.txt so any site is cleanly legible to AI crawlers and agents.</span><span class="k">Python · MCP</span></span>
         <span class="end"><span class="st tnum">★ 4</span><span class="ar">↗</span></span>
       </a>
       <a class="r reveal" href="https://github.com/damionrashford/htsa" target="_blank" rel="noopener">
-        <span class="ix tnum">05</span>
+        <span class="ix tnum">04</span>
         <span class="mid"><span class="t">HTSA</span><span class="d">Structured investigation method — five Ws + five Whys with Bayesian reasoning, as a reusable agent toolkit.</span><span class="k">TypeScript</span></span>
         <span class="end"><span class="st tnum">★ 2</span><span class="ar">↗</span></span>
+      </a>
+      <a class="r reveal" href="https://github.com/damionrashford/modes" target="_blank" rel="noopener">
+        <span class="ix tnum">05</span>
+        <span class="mid"><span class="t">modes</span><span class="d">Blueprint for routed multi-agent systems — a router dispatches each request to a specialist running an isolated playbook.</span><span class="k">Pattern · Open source</span></span>
+        <span class="end"><span class="st tnum">★ 1</span><span class="ar">↗</span></span>
       </a>
     </div>
     <a class="allrepos reveal" href="https://github.com/damionrashford" target="_blank" rel="noopener">All 32 repositories on GitHub ↗</a>
   </section>
 
   <section id="about">
-    <div class="shead reveal"><span class="ix">02</span><h2>About</h2><span class="rule"></span></div>
+    <div class="shead reveal"><span class="ix">03</span><h2>About</h2><span class="rule"></span></div>
     <div class="about">
       <p class="lead reveal">I'm an investigator by temperament — I build tools that <em>gather and evaluate information</em>, deterministically, at scale.</p>
       <div class="body reveal">
@@ -253,8 +351,18 @@ html:not(.js) .reveal{opacity:1;transform:none}
     </div>
   </section>
 
+  <section id="now">
+    <div class="shead reveal"><span class="ix">04</span><h2>Currently</h2><span class="rule"></span><span class="meta" style="font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)">Jun 2026</span></div>
+    <div class="now reveal">
+      <div class="nrow"><span class="when">Building</span><span class="what"><b>MCP &amp; agent tooling</b> <span>— extending the open-source work above with deterministic research and routing primitives.</span></span></div>
+      <div class="nrow"><span class="when">Going deep</span><span class="what"><b>ML systems &amp; agent evaluation</b> <span>— deep learning, retrieval quality, and how you actually measure whether an agent is good.</span></span></div>
+      <div class="nrow"><span class="when">Reading</span><span class="what"><span>Papers and source on inference, ranking, and eval harnesses — notes feed straight back into the tools.</span></span></div>
+      <div class="nrow"><span class="when">Open to</span><span class="what"><b>AI engineering &amp; applied-ML roles</b> <span>— remote or Toronto.</span></span></div>
+    </div>
+  </section>
+
   <section id="stack">
-    <div class="shead reveal"><span class="ix">03</span><h2>Stack</h2><span class="rule"></span></div>
+    <div class="shead reveal"><span class="ix">05</span><h2>Stack</h2><span class="rule"></span></div>
     <div class="grid2 reveal">
       <div class="cell"><h4>Languages</h4><ul><li>Python</li><li>TypeScript</li><li>Bun</li><li>SQL</li></ul></div>
       <div class="cell"><h4>Agents & MCP</h4><ul><li>Model Context Protocol</li><li>FastMCP</li><li>Claude Agent SDK</li><li>OpenAI Agents SDK</li><li>LangChain</li></ul></div>
@@ -264,16 +372,25 @@ html:not(.js) .reveal{opacity:1;transform:none}
   </section>
 
   <section id="contact" class="cta-final">
-    <div class="shead reveal"><span class="ix">04</span><h2>Contact</h2><span class="rule"></span></div>
+    <div class="shead reveal"><span class="ix">06</span><h2>Contact</h2><span class="rule"></span></div>
     <h2 class="reveal">Let's build something <em>agentic.</em></h2>
-    <div class="row reveal">
-      <a class="btn pri" href="mailto:rashforddamion@gmail.com">rashforddamion@gmail.com</a>
-      <a class="btn sec" href="https://github.com/damionrashford" target="_blank" rel="noopener">GitHub ↗</a>
-    </div>
-    <div class="links reveal">
-      <a href="mailto:rashforddamion@gmail.com">Email</a>
-      <a href="https://github.com/damionrashford" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/damion-rashford/" target="_blank" rel="noopener">LinkedIn</a>
+    <div class="about" style="margin-top:46px">
+      <div class="reveal">
+        <p style="color:var(--mut);font-size:16px;max-width:42ch">Building something agentic, hiring for AI engineering, or just want to compare notes? Drop me a line — I read everything.</p>
+        <div class="links" style="margin-top:30px;display:flex;flex-direction:column;gap:12px;font-family:var(--mono);font-size:14px">
+          <a href="mailto:rashforddamion@gmail.com">rashforddamion@gmail.com</a>
+          <a href="https://github.com/damionrashford" target="_blank" rel="noopener">github.com/damionrashford ↗</a>
+          <a href="https://www.linkedin.com/in/damion-rashford/" target="_blank" rel="noopener">linkedin.com/in/damion-rashford ↗</a>
+        </div>
+      </div>
+      <form id="cf" class="cform reveal" method="POST">
+        <input type="text" name="company" class="cf-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <div class="cf-field"><label for="cn">Name</label><input id="cn" name="name" type="text" placeholder="Your name" required /></div>
+        <div class="cf-field"><label for="ce">Email</label><input id="ce" name="email" type="email" placeholder="you@domain.com" required /></div>
+        <div class="cf-field"><label for="cm">Message</label><textarea id="cm" name="message" placeholder="What's on your mind?" required></textarea></div>
+        <button class="btn pri" type="submit" id="cfbtn" style="align-self:flex-start;border:0;cursor:pointer">Send message →</button>
+        <p class="cf-note" id="cfnote" role="status" aria-live="polite"></p>
+      </form>
     </div>
   </section>
 </div>
@@ -290,6 +407,23 @@ const hd=document.getElementById('hd');
 addEventListener('scroll',()=>{hd.classList.toggle('scrolled',scrollY>20)},{passive:true});
 const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(Math.min(i,4)*60)+'ms';io.observe(el)});
+
+// contact form → Cloudflare Worker
+const FORM_ENDPOINT="REPLACE_WITH_WORKER_URL"; // e.g. https://dr-contact.<you>.workers.dev
+const cf=document.getElementById('cf'),cfnote=document.getElementById('cfnote'),cfbtn=document.getElementById('cfbtn');
+cf.addEventListener('submit',async(ev)=>{
+  ev.preventDefault();
+  if(cf.company.value){return;} // honeypot
+  if(FORM_ENDPOINT.startsWith('REPLACE_')){cfnote.className='cf-note err';cfnote.textContent='Form not wired yet — email me directly above.';return;}
+  cfbtn.disabled=true;const lab=cfbtn.textContent;cfbtn.textContent='Sending…';cfnote.className='cf-note';cfnote.textContent='';
+  try{
+    const r=await fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({name:cf.name.value,email:cf.email.value,message:cf.message.value})});
+    if(r.ok){cf.reset();cfnote.className='cf-note ok';cfnote.textContent='Sent — I’ll get back to you soon.';}
+    else{const t=await r.text();cfnote.className='cf-note err';cfnote.textContent=(t||'Something went wrong')+' — or email me directly.';}
+  }catch(_){cfnote.className='cf-note err';cfnote.textContent='Network error — email me directly above.';}
+  finally{cfbtn.disabled=false;cfbtn.textContent=lab;}
+});
 </script>
 </body>
 </html>

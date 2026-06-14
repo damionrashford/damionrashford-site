@@ -1,3 +1,4 @@
 *.png
+!og-image.png
 .studio/
 .DS_Store
