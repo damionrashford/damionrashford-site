@@ -1,0 +1,28 @@
+# Damion Rashford
+
+> AI Agent Developer building the tooling layer for AI agents — production-grade MCP servers and agentic systems. Creator of RivalSearchMCP (101★). 152 stars across 32 open-source projects. Works at Shopify on GraphQL and developer APIs; open to AI engineering roles.
+
+Damion Rashford builds Model Context Protocol (MCP) servers, agent orchestration, retrieval, and the deterministic infrastructure that makes agentic systems dependable in production. The operating principle across the work is "auditable over impressive" — tools that return the same answer twice and show their work.
+
+## Selected work
+- [RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP): Deterministic research MCP server — five-engine web search, content extraction, and quality-scored output so agents reason over auditable data. 101★. Python / FastMCP. Flagship.
+- [Media OS](https://github.com/damionrashford/media-os): Routed media-production system for Claude Code — specialist agents across encode, stream, color, and delivery. 11★. Python.
+- [Adversaria](https://github.com/damionrashford/Adversaria): Critical-thinking plugin — adversary, advocate, and judge agents that stress-test an idea before you commit. 5★. Python.
+- [llms-txt-generator](https://github.com/damionrashford/llms-txt-generator-mcp): MCP server that auto-generates llms.txt so any site is cleanly legible to AI crawlers and agents. 4★. Python.
+- [HTSA](https://github.com/damionrashford/htsa): Structured investigation method — five Ws and five Whys with Bayesian reasoning, as a reusable agent toolkit. 2★. TypeScript.
+- [modes](https://github.com/damionrashford/modes): Blueprint for routed multi-agent systems — a router dispatches each request to a specialist running an isolated playbook. 1★.
+
+## Profile
+- GitHub: https://github.com/damionrashford (32 public repositories, 152★ total)
+- LinkedIn: https://www.linkedin.com/in/damion-rashford/
+- Based: Calgary, AB, Canada → Toronto
+- Day work: GraphQL Admin & Storefront APIs, developer tooling, and production debugging at Shopify
+- Stack: Python, TypeScript, Bun, SQL, Model Context Protocol, FastMCP, Claude Agent SDK, OpenAI Agents SDK, LangChain, RAG, embeddings, rerankers, GraphQL, FastAPI
+
+## Contact
+- Email: rashforddamion@gmail.com
+- Open to: AI engineering and applied-ML roles (remote or Toronto)
+
+## Optional
+- [Portfolio](https://damionrashford.com): Full site
+- [AGENTS.md](https://damionrashford.com/agents.md): Guidance for AI agents representing Damion
