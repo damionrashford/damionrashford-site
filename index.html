@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Damion Rashford — AI Agent Developer & MCP Engineer</title>
+<meta name="description" content="AI Agent Developer building production-grade MCP servers and agentic systems. Creator of RivalSearchMCP. Python, TypeScript, Claude Agent SDK, RAG." />
+<meta name="author" content="Damion Rashford" />
+<link rel="canonical" href="https://damionrashford.com/" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Damion Rashford — AI Agent Developer & MCP Engineer" />
+<meta property="og:description" content="AI Agent Developer building production-grade MCP servers and agentic systems. Creator of RivalSearchMCP." />
+<meta property="og:url" content="https://damionrashford.com/" />
+<meta name="twitter:card" content="summary" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<!-- Studio · macrostructure: focused-scroll · genre: modern-minimal · theme: midnight · tone: technical -->
+<style>
+:root{
+  --paper:oklch(0.17 0.015 260);
+  --surface:oklch(0.21 0.02 260);
+  --surface-2:oklch(0.25 0.022 260);
+  --line:oklch(0.32 0.02 260);
+  --ink:oklch(0.97 0.005 260);
+  --muted:oklch(0.72 0.012 260);
+  --faint:oklch(0.58 0.012 260);
+  --accent:oklch(0.78 0.14 200);
+  --accent-ink:oklch(0.17 0.04 230);
+  --base:8px;
+  --maxw:980px;
+  --r:12px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:Inter,system-ui,sans-serif;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(60% 50% at 50% -10%,oklch(0.24 0.05 230 / .5),transparent 70%);
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.mono{font-family:'JetBrains Mono',monospace}
+a{color:inherit;text-decoration:none}
+
+/* nav */
+header{position:sticky;top:0;z-index:10;backdrop-filter:blur(10px);
+  background:oklch(0.17 0.015 260 / .7);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:'Space Grotesk';font-weight:700;letter-spacing:-.02em;font-size:18px}
+.brand b{color:var(--accent)}
+.navlinks{display:flex;gap:28px}
+.navlinks a{color:var(--muted);font-size:14px;transition:color .2s var(--ease)}
+.navlinks a:hover{color:var(--ink)}
+@media(max-width:640px){.navlinks{display:none}}
+
+/* hero */
+.hero{padding:120px 0 80px}
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--accent);
+  border:1px solid var(--line);background:var(--surface);padding:6px 14px;border-radius:999px;margin-bottom:28px}
+.tag::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
+h1{font-family:'Space Grotesk';font-weight:700;letter-spacing:-.03em;
+  font-size:clamp(40px,7vw,76px);line-height:1.02}
+h1 .grad{background:linear-gradient(120deg,var(--ink),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{font-size:clamp(17px,2.2vw,21px);color:var(--muted);max-width:60ch;margin-top:24px}
+.cta{display:flex;gap:14px;margin-top:40px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:var(--r);
+  font-weight:600;font-size:15px;transition:transform .15s var(--ease),background .2s var(--ease),border-color .2s var(--ease)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.primary:hover{transform:translateY(-2px)}
+.btn.ghost{border:1px solid var(--line);color:var(--ink);background:var(--surface)}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+/* section */
+section{padding:72px 0;border-top:1px solid var(--line)}
+.kicker{font-family:'JetBrains Mono';font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+h2{font-family:'Space Grotesk';font-weight:600;letter-spacing:-.02em;font-size:clamp(26px,4vw,38px);margin-bottom:8px}
+.sub{color:var(--muted);max-width:62ch;margin-bottom:36px}
+.prose p{color:var(--muted);max-width:68ch;margin-top:16px}
+.prose strong{color:var(--ink);font-weight:600}
+
+/* projects */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media(max-width:720px){.grid{grid-template-columns:1fr}}
+.card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:24px;transition:transform .18s var(--ease),border-color .2s var(--ease),background .2s var(--ease)}
+.card:hover{transform:translateY(-3px);border-color:var(--accent);background:var(--surface-2)}
+.card .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.card h3{font-family:'Space Grotesk';font-size:19px;font-weight:600;letter-spacing:-.01em}
+.star{font-family:'JetBrains Mono';font-size:13px;color:var(--accent);white-space:nowrap}
+.card p{color:var(--muted);font-size:14.5px;line-height:1.55}
+.card .lang{display:inline-block;margin-top:14px;font-family:'JetBrains Mono';font-size:12px;color:var(--faint)}
+
+/* skills */
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{font-family:'JetBrains Mono';font-size:13px;color:var(--muted);
+  border:1px solid var(--line);background:var(--surface);padding:8px 14px;border-radius:8px;transition:color .2s,border-color .2s}
+.chip:hover{color:var(--accent);border-color:var(--accent)}
+
+/* contact */
+.contact{text-align:center;padding:96px 0}
+.contact h2{margin-bottom:18px}
+.contact .cta{justify-content:center}
+
+footer{border-top:1px solid var(--line);padding:32px 0;color:var(--faint);font-size:13px;
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer .mono{color:var(--faint)}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#top">damion<b>.</b>rashford</a>
+  <div class="navlinks">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#stack">Stack</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav></div></header>
+
+<main id="top">
+<div class="wrap">
+  <section class="hero" style="border:0">
+    <span class="tag mono">Open to AI engineering roles</span>
+    <h1>AI agents that<br><span class="grad">actually ship.</span></h1>
+    <p class="lede">I'm Damion Rashford — I build production-grade <strong style="color:var(--ink)">MCP servers</strong> and agentic systems. Creator of RivalSearchMCP, a deterministic research server used by 100+ developers.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/damionrashford" target="_blank" rel="noopener">View GitHub →</a>
+      <a class="btn ghost" href="mailto:rashforddamion@gmail.com">Get in touch</a>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section id="about">
+    <div class="kicker">// about</div>
+    <h2>Building the tooling layer for AI agents.</h2>
+    <div class="prose">
+      <p>I work where language models meet real systems — the <strong>Model Context Protocol</strong>, agent orchestration, retrieval, and the deterministic plumbing that makes agentic software reliable instead of a demo.</p>
+      <p>Most of my work is open source. I design servers and frameworks that other developers actually pull into their stacks, with a bias toward <strong>auditable output, clean interfaces, and tools that hold up in production</strong>.</p>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="kicker">// selected work</div>
+    <h2>Shipped &amp; in use.</h2>
+    <p class="sub">Open-source, real stars, real users. Live on GitHub.</p>
+    <div class="grid">
+      <a class="card" href="https://github.com/damionrashford/RivalSearchMCP" target="_blank" rel="noopener">
+        <div class="top"><h3>RivalSearchMCP</h3><span class="star">★ 101</span></div>
+        <p>Deterministic research MCP server on FastMCP — 5-engine web search, content extraction, and quality-scored output for AI agents.</p>
+        <span class="lang">Python · MCP</span>
+      </a>
+      <a class="card" href="https://github.com/damionrashford/media-os" target="_blank" rel="noopener">
+        <div class="top"><h3>Media OS</h3><span class="star">★ 11</span></div>
+        <p>Routed media production system for Claude Code — specialist agents and mode playbooks for encode, stream, color, and delivery pipelines.</p>
+        <span class="lang">Python · Agents</span>
+      </a>
+      <a class="card" href="https://github.com/damionrashford/Adversaria" target="_blank" rel="noopener">
+        <div class="top"><h3>Adversaria</h3><span class="star">★ 5</span></div>
+        <p>Critical-thinking plugin for Claude Code. Adversary, advocate, and judge agents that stress-test ideas before you commit to them.</p>
+        <span class="lang">Python · Agents</span>
+      </a>
+      <a class="card" href="https://github.com/damionrashford/llms-txt-generator-mcp" target="_blank" rel="noopener">
+        <div class="top"><h3>llms-txt-generator</h3><span class="star">★ 4</span></div>
+        <p>MCP server that auto-generates <span class="mono">llms.txt</span> and <span class="mono">llms-full.txt</span> so any site is readable by AI crawlers.</p>
+        <span class="lang">Python · MCP</span>
+      </a>
+      <a class="card" href="https://github.com/damionrashford/htsa" target="_blank" rel="noopener">
+        <div class="top"><h3>HTSA</h3><span class="star">★ 2</span></div>
+        <p>Structured investigation method — 5 Ws + 5 Whys with Bayesian reasoning, packaged as a reusable agent toolkit.</p>
+        <span class="lang">TypeScript</span>
+      </a>
+      <a class="card" href="https://github.com/damionrashford/modes" target="_blank" rel="noopener">
+        <div class="top"><h3>modes</h3><span class="star">★ 1</span></div>
+        <p>Blueprint for routed multi-agent systems — a router skill dispatches each request to a specialist running an isolated markdown playbook.</p>
+        <span class="lang">Pattern</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="kicker">// stack</div>
+    <h2>Tools I reach for.</h2>
+    <p class="sub">The kit behind the work above.</p>
+    <div class="chips">
+      <span class="chip">Python</span>
+      <span class="chip">TypeScript</span>
+      <span class="chip">Model Context Protocol</span>
+      <span class="chip">FastMCP</span>
+      <span class="chip">Claude Agent SDK</span>
+      <span class="chip">OpenAI Agents SDK</span>
+      <span class="chip">LangChain</span>
+      <span class="chip">RAG</span>
+      <span class="chip">Bun</span>
+      <span class="chip">FastAPI</span>
+      <span class="chip">React</span>
+      <span class="chip">SQLite</span>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section class="contact" id="contact" style="border-top:1px solid var(--line)">
+    <div class="kicker">// contact</div>
+    <h2>Let's build something agentic.</h2>
+    <p class="sub" style="margin:0 auto 32px">Open to AI engineering and applied-ML roles. Fastest way to reach me is email.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:rashforddamion@gmail.com">rashforddamion@gmail.com</a>
+      <a class="btn ghost" href="https://github.com/damionrashford" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/damionrashford" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer><div class="wrap" style="display:flex;justify-content:space-between;width:100%;flex-wrap:wrap;gap:12px">
+  <span class="mono">© 2026 Damion Rashford</span>
+  <span class="mono">Built with intent · damionrashford.com</span>
+</div></footer>
+</body>
+</html>
